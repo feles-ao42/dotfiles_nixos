@@ -146,12 +146,14 @@
 	screen
 
 	# application's
+	burpsuite
 	vscode
 	wireshark	
 	brave
 	zoom-us
 	slack
 	discord
+	jupyter
 	
 	# personal command
 	docker
@@ -161,20 +163,6 @@
 	htop
 	direnv
   ];
-
-  programs.git = {
-    enable = true;
-    userName = "feles-ao42";
-    userEmail = "yf@keio.jp";
-    extraConfig = {
-      core = {
-        editor = "vim";
-      };
-      init = {
-        defaultBranch = "master";
-      };
-    };
-  };
 
 virtualisation.docker.enable = true;
 
@@ -228,10 +216,10 @@ services.fprintd.tod.driver = pkgs.libfprint-2-tod1-vfs0090;
   # Home Manager
   home-manager.users.feles = { config, pkgs, ... }: {
     imports = [
-      /home/feles/dotfiles/home.nix
+      /home/feles/dotfiles_nixos/home.nix
       #/home/feles/.config/nixpkgs/custom.nix
     ];
-
+    home.stateVersion = "23.05";
     home.homeDirectory = "/home/feles";
   };
 

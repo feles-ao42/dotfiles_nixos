@@ -164,6 +164,9 @@
 	direnv
   ];
 
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
+
 virtualisation.docker.enable = true;
 
 programs.zsh.enable = true;
@@ -188,8 +191,8 @@ services.fprintd.tod.driver = pkgs.libfprint-2-tod1-vfs0090;
   # services.openssh.enable = true;
 
   # Open ports in the firewall.
-  networking.firewall.allowedTCPPorts = [ 443 80 8080 8554];
-  networking.firewall.allowedUDPPorts = [ 443 80 8080 8554];
+  #networking.firewall.allowedTCPPorts = [ 443 80 8080 8554];
+  #networking.firewall.allowedUDPPorts = [ 443 80 8080 8554];
   # Or disable the firewall altogether.
   networking.firewall.enable = true;
 

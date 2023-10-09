@@ -17,11 +17,22 @@
     "openssl-1.1.1v"
   ];
 
+  nixpkgs.config.allowUnfree = true;
+
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
+    # application
+    vlc
+    jetbrains.pycharm-professional
+    jetbrains.webstorm
+    jetbrains.idea-ultimate
+    firefox
+
     # advanced command
+    vagrant
     asdf-vm
+    unzip
 
     # toy command
     neofetch

@@ -33,6 +33,13 @@
     vagrant
     asdf-vm
     unzip
+    nmap
+    dig
+    traceroute
+    ncrack
+    tree
+    nuclei
+
 
     # toy command
     neofetch

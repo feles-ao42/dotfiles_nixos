@@ -112,7 +112,7 @@
   users.users.feles = {
     isNormalUser = true;
     description = "feles";
-    extraGroups = [ "networkmanager" "wheel" "docker"];
+    extraGroups = [ "networkmanager" "wheel" "docker" "vboxusers"];
     shell = pkgs.zsh;
     packages = with pkgs; [
     #firefox
@@ -166,6 +166,10 @@
 
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
+  virtualisation.virtualbox.host.enableExtensionPack = true;
+  virtualisation.virtualbox.guest.enable = true;
+  virtualisation.virtualbox.guest.x11 = true;
+
 
 virtualisation.docker.enable = true;
 

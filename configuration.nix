@@ -7,7 +7,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-	<nixos-hardware/lenovo/thinkpad/x1/10th-gen>	
+	/home/feles/dotfiles_nixos/hard_env/x1.nix
 	./hardware-configuration.nix
 	<home-manager/nixos>
     ];
@@ -129,9 +129,6 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
 	
-	# for config
-	fprintd
-	
 	# base command
 	wget
 	vim
@@ -171,15 +168,9 @@
   virtualisation.virtualbox.guest.x11 = true;
 
 
-programs.zsh.enable = true;
+  programs.zsh.enable = true;
 
-virtualisation.docker.enable = true;
-
-services.fprintd.enable = true;
-
-services.fprintd.tod.enable = true;
-
-services.fprintd.tod.driver = pkgs.libfprint-2-tod1-vfs0090; 
+  virtualisation.docker.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

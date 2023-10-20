@@ -171,9 +171,9 @@
   virtualisation.virtualbox.guest.x11 = true;
 
 
-virtualisation.docker.enable = true;
-
 programs.zsh.enable = true;
+
+virtualisation.docker.enable = true;
 
 services.fprintd.enable = true;
 
@@ -224,6 +224,7 @@ services.fprintd.tod.driver = pkgs.libfprint-2-tod1-vfs0090;
   home-manager.users.feles = { config, pkgs, ... }: {
     imports = [
       /home/feles/dotfiles_nixos/home.nix
+      #/home/feles/dotfiles_nixos/shell.nix
       #/home/feles/.config/nixpkgs/custom.nix
     ];
     home.stateVersion = "23.05";

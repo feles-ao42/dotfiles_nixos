@@ -45,8 +45,10 @@
     neofetch
 
     # languages
-    python39Full
-    python39Packages.pip
+    python310Full
+    python310Packages.pip
+    asdf-vm
+    #conda
 
 
 

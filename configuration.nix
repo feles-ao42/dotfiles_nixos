@@ -116,7 +116,6 @@
     shell = pkgs.zsh;
     packages = with pkgs; [
     #firefox
-    #brave
     thunderbird
     ];
   };
@@ -141,6 +140,7 @@
 	git
 	zsh
 	screen
+	zlib
 
 	# application's
 	burpsuite
@@ -166,6 +166,8 @@
   virtualisation.virtualbox.host.enableExtensionPack = true;
   virtualisation.virtualbox.guest.enable = true;
   virtualisation.virtualbox.guest.x11 = true;
+
+  services.tailscale.enable = true;
 
 
   programs.zsh.enable = true;

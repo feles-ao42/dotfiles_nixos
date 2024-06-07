@@ -144,7 +144,7 @@
 
 	# application's
 	burpsuite
-	vscode
+	#vscode
 	wireshark	
 	brave
 	zoom-us

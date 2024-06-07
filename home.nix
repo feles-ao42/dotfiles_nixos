@@ -30,8 +30,7 @@
     firefox
 
     # advanced command
-    vagrant
-    asdf-vm
+    # vagrant
     unzip
     nmap
     dig
@@ -45,12 +44,15 @@
     neofetch
 
     # languages
+    asdf-vm
     python310Full
     python310Packages.pip
-    asdf-vm
     #conda
 
-
+    # freegian
+    #zulu11
+    #nodejs_14
+    #libgcc
 
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.

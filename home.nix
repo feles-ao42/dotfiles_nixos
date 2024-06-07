@@ -28,6 +28,7 @@
     jetbrains.webstorm
     jetbrains.idea-ultimate
     firefox
+    brave
 
     # advanced command
     # vagrant

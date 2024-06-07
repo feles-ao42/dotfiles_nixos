@@ -146,11 +146,11 @@
 	burpsuite
 	#vscode
 	wireshark	
-	brave
 	zoom-us
 	slack
 	discord
-	jupyter
+
+	tailscale
 	
 	# personal command
 	docker
@@ -161,11 +161,11 @@
 	direnv
   ];
 
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
-  virtualisation.virtualbox.host.enableExtensionPack = true;
-  virtualisation.virtualbox.guest.enable = true;
-  virtualisation.virtualbox.guest.x11 = true;
+  #virtualisation.virtualbox.host.enable = true;
+  #users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
+  #virtualisation.virtualbox.host.enableExtensionPack = true;
+  #virtualisation.virtualbox.guest.enable = true;
+  #virtualisation.virtualbox.guest.x11 = true;
 
   services.tailscale.enable = true;
 
